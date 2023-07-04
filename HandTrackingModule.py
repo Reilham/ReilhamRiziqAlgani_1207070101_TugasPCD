@@ -106,6 +106,7 @@ def main():
         cv2.imshow("Image", img)
         if cv2.waitKey(1) == 27:  # Exit when "Esc" key is pressed
             break
+            cv2.show()
 
     cap.release()
     cv2.destroyAllWindows()

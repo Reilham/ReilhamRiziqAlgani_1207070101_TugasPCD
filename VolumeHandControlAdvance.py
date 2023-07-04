@@ -8,7 +8,7 @@ from comtypes import CLSCTX_ALL
 from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume
 
 
-wCam, hCam = 640, 480
+wCam, hCam = 640, 680
 
 
 cap = cv2.VideoCapture(0)
@@ -90,6 +90,7 @@ while True:
     cv2.waitKey(1)
     if cv2.waitKey(1) == 27:  # Exit when "Esc" key is pressed
         break
+        cv2.show()
 
 cap.release()
 cv2.destroyAllWindows()
